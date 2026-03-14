@@ -51,14 +51,30 @@ Run the simulation and verify Sum and Carry outputs using the truth table.
 ```
 
 **Program:**
+```
 
 /* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber: 212225040359
 */
+module expfl(sum, cout, a, b, cin);
+    output sum;
+    output cout;
+    input a;
+    input b;
+    input cin;
 
+	 wire w1,w2,w3;
+	 assign w1=a^b;
+	 assign w2=a&b;
+	 assign w3=w1&cin;
+	 assign sum=w1^cin;
+	 assign cout=w2|w3;
+endmodule
+```
 **RTL Schematic**
+![image](https://github.com/VGSAIRAIMA/FULL_ADDER_SUBTRACTOR/blob/main/expfl01.png)
 
 **Output Timing Waveform**
-
+![image](https://github.com/VGSAIRAIMA/FULL_ADDER_SUBTRACTOR/blob/main/expfl02.png)
 **Result:**
 
 Thus the Full Adder and Full Subtractor circuits are designed and the truth tables is verified using Quartus software.
