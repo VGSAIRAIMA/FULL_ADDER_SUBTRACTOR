@@ -1,10 +1,10 @@
-# FULL_ADDER_SUBTRACTOR
+# FULL_ADDER
 
-Implementation-of-Full-Adder-and-Full-subtractor-circuit
+Implementation-of-Full-Adder-circuit
 
 **AIM:**
 
-To design a Full Adder and Full Subtractor circuit and verify its truth table in Quartus using Verilog programming.
+To design a Full Adder circuit and verify its truth table in Quartus using Verilog programming.
 
 **Equipments Required:**
 
@@ -12,7 +12,6 @@ Hardware – PCs, Cyclone II , USB flasher
 
 Software – Quartus prime
 
-**Full Adder and Full Subtractor**
 
 **Full Adder**
 
@@ -26,25 +25,34 @@ Carry = AB + ACin + BCin
 
 **Figure -1 FULL ADDER**
 
-**Full Subtractor**
-
-A full subtractor is a combinational circuit that performs subtraction involving three bits, namely minuend, subtrahend, and borrow-in . It accepts three inputs: minuend, subtrahend and a borrow bit and it produces two outputs: difference and borrow.
-
-![image](https://github.com/naavaneetha/FULL_ADDER_SUBTRACTOR/assets/154305477/02b24f51-ab51-4304-9ad6-7b81ffc1ead5)
-
-Diff = A ⊕ B ⊕ Bin 
-
-Borrow out = A'Bin + A'B + BBin
-
 **Truthtable**
-
+![image]([https://de-iitr.vlabs.ac.in/exp/half-full-adder/images/2.2.png](https://theorycircuit.com/digital-electronics/full-adder-circuit-diagram-with-logic-ic/))
 **Procedure**
+```
+Open Quartus Prime software.
 
-Write the detailed procedure here
+Create a new project with project name and location.
+
+Select the required device for the project.
+
+Create a new Verilog HDL file.
+
+Write the Full Adder Verilog program.
+
+Save the file using .v extension.
+
+Set the file as Top-Level Entity.
+
+Compile the design using Start Compilation.
+
+Open Simulation Waveform Editor and apply inputs A, B, and Cin.
+
+Run the simulation and verify Sum and Carry outputs using the truth table.
+```
 
 **Program:**
 
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
+/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber: 212225040359
 */
 
 **RTL Schematic**
